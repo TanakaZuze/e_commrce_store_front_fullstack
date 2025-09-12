@@ -2,7 +2,6 @@ package dev.tanaka.ecommerce_storefront_backend.controller.product_controller;
 
 import dev.tanaka.ecommerce_storefront_backend.model.Product;
 import dev.tanaka.ecommerce_storefront_backend.service.product_service.ProductService;
-import lombok.Data;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,6 +9,7 @@ import java.util.List;
 
 
 @RestController
+@CrossOrigin(origins = "http://localhost:4200")
 public class ProductController {
     private final ProductService productService;
 
